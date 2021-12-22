@@ -44,9 +44,9 @@ app.post('/list', async (req, res) => {
     console.log(req.body);
 
     var mailOptions = {
-        from: 'info@thedesignanddecor.org',
-        to: 'kar.suvra6682@gmail.com',
-        subject: 'Mail from a client',
+        from: process.env.MAIL_FROM,
+        to: process.env.MAIL_TO ,
+        subject: process.env.MAIL_SUBJECT ,
         text: `"Cilent's Name is:" ${req.body.name}, Phone Number: ${req.body.phone}, Email Id: ${req.body.email}, Client's Message is: ${req.body.message}`,
         html : `<h3> Cilent's Name is:</h3>  ${req.body.name}, <br>  <h3>Phone Number: </h3> ${req.body.phone}, <br> <h3> Email Id: </h3> ${req.body.email}, <br> <h3>Client's Message is: </h3> ${req.body.message}`,
       };
