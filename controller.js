@@ -58,7 +58,7 @@ module.exports = class ContactController {
                 }
                 return res(result)
             });
-            return res([])
+           
         });
 
     }
