@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "parcel form.html",
-    "build": "parcel build form.html"
+    "start" : "node view.js"
   },
   "repository": {
     "type": "git",
